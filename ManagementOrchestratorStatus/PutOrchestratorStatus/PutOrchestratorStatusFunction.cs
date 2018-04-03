@@ -11,7 +11,7 @@ using Microsoft.WindowsAzure.Storage.Table;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace PutOrchestratorStatus
+namespace Functions
 {
     public static class PutOrchestratorStatusFunction
     {

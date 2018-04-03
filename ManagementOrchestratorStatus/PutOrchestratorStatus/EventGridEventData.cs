@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PutOrchestratorStatus
+namespace Functions
 {
     public class EventGridEventData
     {
