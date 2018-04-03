@@ -13,10 +13,10 @@ using Newtonsoft.Json.Linq;
 
 namespace PutOrchestratorStatus
 {
-    public static class Program
+    public static class PutOrchestratorStatusFunction
     {
         [FunctionName("PutOrchestratorStatus")]
-        public static async Task<HttpResponseMessage> Run(
+        public static async Task<HttpResponseMessage> PutOrchestratorStatus(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get","post")]HttpRequestMessage req,
             [Table("OrchestratorStatus", Connection = "StatusTableStorage")]CloudTable status,
             TraceWriter log)
