@@ -61,7 +61,8 @@ namespace Functions
                         batchOperation.InsertOrMerge(new OrchestratorStatus()
                         {
                             PartitionKey = data.InstanceId,
-                            RowKey = Guid.NewGuid().ToString()
+                            RowKey = Guid.NewGuid().ToString(),
+                            HubName = data.HubName
                         });
                         break;
                     case (int)OrchestrationRuntimeStatus.Completed:

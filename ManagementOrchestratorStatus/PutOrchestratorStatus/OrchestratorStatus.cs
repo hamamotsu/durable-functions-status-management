@@ -9,5 +9,6 @@ namespace Functions
 {
     public class OrchestratorStatus : TableEntity
     {
+        public string HubName { get; set; }
     }
 }
